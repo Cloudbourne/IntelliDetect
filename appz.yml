@@ -1,0 +1,27 @@
+app:
+  name: Findano
+  code: FANO
+  notify: appz@cloudbourne.co
+
+build:
+  version: 0.1
+  env: DEV
+  build_file: none
+  output_files: output/*.zip
+  image_template: tensorflow-anomaly_v1
+  image_name: myco/findano
+
+deploy:
+  context: myco/DEV
+  replicas: 1
+  port: 8080
+  strategy : rolling
+  
+monitor:
+  notify: appzops@cloudbourne.co
+
+properties:
+  threshold : 1.0
+  
+
+  
