@@ -14,14 +14,9 @@ build:
 deploy:
   context: myco/DEV
   replicas: 1
-  port: 8080
-  strategy : rolling
   
 monitor:
   notify: appzops@cloudbourne.co
 
 properties:
   threshold : 1.0
-  
-
-  
