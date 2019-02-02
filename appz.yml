@@ -1,6 +1,6 @@
 app:
-  name: Findano
-  code: FANO
+  name: IntelliDetect
+  code: INTDET
   notify: appz@cloudbourne.co
 
 build:
@@ -8,8 +8,8 @@ build:
   env: DEV
   build_file: none
   output_files: output/*.zip
-  image_template: tensorflow-anomaly_v1
-  image_name: myco/findano
+  image_template: tensorflow_anomaly_bk-v1
+  image_name: myco/intellidetect
 
 deploy:
   context: myco/DEV
