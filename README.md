@@ -1,1 +1,1 @@
-## FINDANO - Find anomalies using AppZ's TensorFlow image. 
+## IntelliDetect - Find anomalies using AppZ's TensorFlow AI Platform. 
