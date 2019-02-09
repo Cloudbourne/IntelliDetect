@@ -26,7 +26,7 @@ monitor:
   notify: appzops@cloudbourne.co      
 
 properties:
-  nano : 15
+  nano : 16
   threshold : 1.0
   smtp_user : 
     key : smtp.user
