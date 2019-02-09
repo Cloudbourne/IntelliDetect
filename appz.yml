@@ -14,9 +14,20 @@ build:
 deploy:
   context: myco/DEV
   replicas: 1
-  
+  port:
+  - 5000
+
+volumes:
+- claim: intellidetect-bk-pvc
+  mount: /appz/data
+  name: data
+
 monitor:
-  notify: appzops@cloudbourne.co
+  notify: appzops@cloudbourne.co      
 
 properties:
   threshold : 1.0
+  smtp_user : 
+    key : smtp.user
+  smtp_password : 
+    secret : smtp.password
